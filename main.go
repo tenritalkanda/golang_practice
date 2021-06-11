@@ -42,6 +42,8 @@ func main() {
 	default:
 		log.Println("default")
 	}
+
+	log.Println(len("satu_dua"))
 }
 
 func saySomething(s string) string {
