@@ -7,9 +7,13 @@ import (
 
 func main() {
 	fmt.Println("Hello World")
-	var whatToSay string
-	var say string
-	var i int
+	//multiple declare with one var
+	var (
+		whatToSay string
+		say       string
+		i         int
+	)
+
 	var doubleD string
 	var secondD string
 
