@@ -32,6 +32,7 @@ func main() {
 	doubleD, secondD = doubleReturn("Wow")
 	log.Println(doubleD, secondD)
 
+	//switch case
 	myCat := "red"
 
 	switch myCat {
@@ -43,6 +44,7 @@ func main() {
 		log.Println("default")
 	}
 
+	//length of string
 	log.Println(len("satu_dua"))
 }
 
