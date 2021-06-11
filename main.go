@@ -1,9 +1,12 @@
 package main
 
-import "log"
+import (
+	"fmt"
+	"log"
+)
 
 func main() {
-	// fmt.Println("Hello World")
+	fmt.Println("Hello World")
 	var whatToSay string
 	var say string
 	var i int
@@ -29,6 +32,16 @@ func main() {
 	doubleD, secondD = doubleReturn("Wow")
 	log.Println(doubleD, secondD)
 
+	myCat := "red"
+
+	switch myCat {
+	case "black":
+		log.Println("i got black cat")
+	case "blue":
+		log.Println("there is no blue cat")
+	default:
+		log.Println("default")
+	}
 }
 
 func saySomething(s string) string {
