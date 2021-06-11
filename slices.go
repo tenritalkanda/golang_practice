@@ -47,4 +47,18 @@ func main() {
 	daySliceFR[0] = "Berubah"
 	fmt.Println("\ndaySliceFR berubah :", daySliceFR)
 	fmt.Println("Parentnya juga berubah :", days)
+
+	//slice from slice tapi parentnya tidak ikut berubah
+	daySliceTwo := days[0:2]
+	fmt.Println("\ndaySliceTwo :", daySliceTwo)
+
+	//karena daySliceTwo fix berkapasitas 2,
+	//di append dari new declare, maka akan terbentuk array baru yg tidak berhubungan dengan parentnya saat berubah.
+	//karena melebihi kapasitas si parent
+	dayAppend := append(daySliceTwo, "LEBIH")
+	fmt.Println("\ndayAppend :", dayAppend)
+
+	fmt.Println("\ndaySliceTwo kapasitas 2 jadi tidak ada array 'LEBIH' :", daySliceTwo)
+	fmt.Println("\ndays kapasitasnya 7 jadi bisa ikut berubah di index ke 3:", days)
+
 }
