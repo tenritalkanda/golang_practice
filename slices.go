@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"sort"
 )
@@ -23,13 +24,27 @@ func main() {
 
 	log.Println(myNumbers)
 
-	log.Println(myNumbers[0:5])
+	//slice from slice
+	days := []string{
+		"senin", "selasa", "rabu", "kamis", "jumat", "sabtu", "minggu",
+	}
 
-	log.Println(myNumbers[1:1])
+	//string from slice
+	daySlice := days[5]
 
-	log.Println(myNumbers[1:2])
+	fmt.Println("days :", days)
+	fmt.Println("string from slice :", daySlice)
 
-	log.Println(myNumbers[6:8])
+	daySlice = "awaw"
+	fmt.Printf("daySlice berubah dari '%s' ke : '%s'", days[5], daySlice)
+	fmt.Println("\nparentnya tetep :", days)
 
-	log.Println(myNumbers[7])
+	//slice from slice
+	daySliceFR := days[0:2]
+	fmt.Println("\nslice from slice 0:2 :", daySliceFR)
+
+	//slice from slice kalo dirubah value, parentnya ikut berubah
+	daySliceFR[0] = "Berubah"
+	fmt.Println("\ndaySliceFR berubah :", daySliceFR)
+	fmt.Println("Parentnya juga berubah :", days)
 }

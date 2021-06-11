@@ -2,7 +2,7 @@
 // Go program to illustrate how to copy
 // a slice into another slice using the
 // copy function
-// copy will only copy the minimum number of dest or source which one have a lower capacity, that will be the number of copied data.
+// copy will only copy the minimum number of dest or source which one have a lower length, that will be the number of copied data.
 package main
 
 import "fmt"
