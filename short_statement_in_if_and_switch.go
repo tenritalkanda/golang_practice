@@ -15,7 +15,17 @@ func main() {
 	}
 
 	//short statement in switch
-	switch many_cars := len(myCars); many_cars >= 1 {
+	switch many_cars := len(myCars); many_cars {
+	case 2:
+		fmt.Println("Many Cars")
+	case 1:
+		fmt.Println("Not Many Cars")
+	default:
+		fmt.Println("default")
+
+	}
+
+	switch truefalse := len(myCars); truefalse > 1 {
 	case true:
 		fmt.Println("Many Cars")
 	case false:
@@ -23,5 +33,16 @@ func main() {
 	default:
 		fmt.Println("default")
 
+	}
+
+	name := "Tenri6"
+	//switch tanpa expression
+	switch {
+	case len(name) > 5:
+		fmt.Println("nama lebih dari 5 huruf")
+	case len(name) > 1 && len(name) <= 5:
+		fmt.Println("nama terlalu sedikit")
+	default:
+		fmt.Println("default nama")
 	}
 }
