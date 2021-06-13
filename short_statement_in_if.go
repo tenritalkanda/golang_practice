@@ -14,4 +14,14 @@ func main() {
 		fmt.Println("No Cars")
 	}
 
+	//short statement in switch
+	switch many_cars := len(myCars); many_cars >= 1 {
+	case true:
+		fmt.Println("Many Cars")
+	case false:
+		fmt.Println("Not Many Cars")
+	default:
+		fmt.Println("default")
+
+	}
 }
