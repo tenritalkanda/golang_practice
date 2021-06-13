@@ -45,4 +45,12 @@ func main() {
 	default:
 		fmt.Println("default nama")
 	}
+
+	for index, letter := range name {
+		fmt.Println("index :", index, " and letter is :", string(letter))
+	}
+
+	for _, huruf := range name {
+		fmt.Println("hurufnya :", string(huruf))
+	}
 }
