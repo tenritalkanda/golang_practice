@@ -5,6 +5,7 @@ import "log"
 type User struct {
 	FirstName string
 	LastName  string
+	Age       int
 }
 
 func main() {
@@ -31,9 +32,10 @@ func mainUser() {
 	me := User{
 		FirstName: "Tenri",
 		LastName:  "Tend",
+		Age:       30,
 	}
 
 	userMap["who"] = me
 
-	log.Println(userMap["who"].FirstName)
+	log.Println(userMap["who"].FirstName, userMap["who"].Age)
 }
