@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	// [...] berarti arraynya tidak ditentukan berapa banyak isinya, tapi otomatis membaca ada berapa value yg diisi, sehingga otomatis menjadi [3]
 	var ini_array = [...]int{1, 2, 3}
 	var ini_slice = []int{4, 5, 6}
 
