@@ -30,7 +30,13 @@ func main() {
 		"key":   "value",
 		"kunci": "nilai",
 	}
+
 	fmt.Println(map2)
+
+	//map mengembalikan 2 nilai : 1 yg _ itu valuenya dari key, trueOrFalse itu bool dari ada atau tidaknya index dengan key itu
+	_, trueOrFalse := map2["ada_gak_key_ini"]
+	fmt.Println("ada gak key ini :", trueOrFalse)
+
 	mainUser()
 }
 
