@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"runtime"
+	"time"
+)
 
 func main() {
 	dict := []string{
@@ -11,6 +15,10 @@ func main() {
 
 	is_exists, _ := in_array("foo", dict)
 	fmt.Println(is_exists)
+	fmt.Println(runtime.GOOS)
+
+	today := time.Now()
+	fmt.Println(today)
 }
 
 func in_array(val string, array []string) (ok bool, i int) {
