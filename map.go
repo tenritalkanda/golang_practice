@@ -1,6 +1,9 @@
 package main
 
-import "log"
+import (
+	"fmt"
+	"log"
+)
 
 type User struct {
 	FirstName string
@@ -23,6 +26,11 @@ func main() {
 
 	log.Println(myMap2["age"])
 
+	map2 := map[string]string{
+		"key":   "value",
+		"kunci": "nilai",
+	}
+	fmt.Println(map2)
 	mainUser()
 }
 
