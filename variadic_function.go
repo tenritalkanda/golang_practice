@@ -14,6 +14,8 @@ func main() {
 	fmt.Println(min)
 }
 
+//variadic function : func yg memiliki varargs, varargs adalah parameter yg bisa menerima lebih dari 1 data,
+// tidak perlu ditentukan jumlah indexnya seperti array [8] saat memanggil function
 //numbers ...int adalah varargs harus ditaro dipaling kanan (final argument)
 func variadic(operand string, numbers ...int) (int, error) {
 	switch operand {
