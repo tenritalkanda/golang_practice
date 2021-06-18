@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func endApp() {
+	//function recover digunakan untuk menangkap data panic
+	//recover taro di defer function, harus berbeda dengan function panic
 	message := recover()
 	if message != nil {
 		fmt.Println("Error dengan message:", message)
@@ -22,5 +24,6 @@ func runApp(error bool) {
 
 func main() {
 	runApp(true)
+	//print eko tetap dilanjutkan karena eksekusi program di recover walaupun ada panic
 	fmt.Println("Eko")
 }
