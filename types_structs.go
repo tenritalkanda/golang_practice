@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"time"
 )
@@ -22,7 +23,6 @@ type B struct {
 func main() {
 	user := User{
 		FirstName: "test",
-		// LastName:  "aja",
 	}
 
 	bb := B{Test: "waw"}
@@ -30,6 +30,7 @@ func main() {
 	log.Println(a)
 	log.Println(bb.Test)
 
+	fmt.Println(user.FirstName, user.LastName, user.PhoneNumber, user.Age, user.Birthdate)
 	// test := test()
 	// log.Println(test)
 }

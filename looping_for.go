@@ -21,4 +21,9 @@ func main() {
 	for _, huruf := range name {
 		fmt.Println("hurufnya :", string(huruf))
 	}
+
+	for index := 0; index < len(name); index++ {
+		fmt.Println("index :", index, " and letter is :", string(name[index]))
+	}
+
 }
